@@ -10,5 +10,5 @@ app.use(bodyParser.json());
 app.use('/', summoner);
 
 app.listen(4001, () => {
-  console.log("online");
+  console.log("git test");
 });
