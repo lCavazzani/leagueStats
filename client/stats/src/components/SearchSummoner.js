@@ -4,6 +4,7 @@ import Select from 'react-select'
 
 const Padding = styled.div`
   padding: 28px;
+  display: inline-flex;
 `;
 
 const Input = styled.input`
@@ -30,8 +31,8 @@ const servers = [
 const SearchCustomer = ({ name, searchSummoner, handleChange, handleSelectChange, server }) => {
   return (
     <Padding>
-    <Input onChange={handleChange} value={name} />
-    <Select options={servers} styles={{width: 100}} value={server} onChange={handleSelectChange}/>
+    <Input onChange={handleChange} value={name}  placeholder="Search for summoner" />
+    <Select options={servers} styles={{width: "100px"}} value={server} onChange={handleSelectChange}/>
     <Button onClick={() => searchSummoner(name, server)} disabled={name && server ? false : true}> Search </Button>
   </Padding>
   );

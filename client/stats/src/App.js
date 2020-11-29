@@ -49,7 +49,6 @@ class App extends React.Component {
         <MatchlistTable matchlist={data.matchlist}></MatchlistTable> </div>
         
         : null}
-        hi
       </div>
     );
   }
