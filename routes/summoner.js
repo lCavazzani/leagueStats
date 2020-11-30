@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const TeemoJS = require("teemojs");
 
-let api = TeemoJS("RGAPI-14d2cfd4-8cc8-4a12-9f80-35d118b34202");
+let api = TeemoJS(process.env.RIOT_API);
 
 router.get("/", function (req, res) {
   res.send("hello");

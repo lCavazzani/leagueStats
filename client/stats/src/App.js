@@ -19,7 +19,7 @@ class App extends React.Component {
 
   searchSummoner(name, server) {
     console.log(server.value)
-    fetch(`http://localhost:4001/br1/${name}`)
+    fetch(`https://myleaguestatsapi.herokuapp.com/br1/${name}`)
       .then((res) => res.json())
       .then((data) => {
         this.setState({ data: data.data, isLoaded: true });
